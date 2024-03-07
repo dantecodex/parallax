@@ -1,9 +1,11 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 body {
     margin: 0;
-    font-family: lato;
+    font-family: Cedarville Cursive;
+}
+
+.caption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .img1 {
@@ -26,20 +28,19 @@ body {
     color: white;
     font-weight: 600;
     border-radius: 10px;
-    padding: 20px 40px;
-    
+    padding: 20px 40px;  
 }
 
 .content {
     display: flex;
     background-color: #edd3aa53;
-    padding-top: 10px;
-    margin: 0;
 
+    margin: 0;
+    height: 500px;
 }
 
 .content img {
-    width: 400px;
+    height: 500px;
     object-fit: contain;
 }
 
@@ -76,6 +77,15 @@ body {
     text-align: center;
     width: fit-content;
     height: 500px;
+    overflow-y: auto;
+}
+
+.details::-webkit-scrollbar {
+    display: none;
+  }
+
+.lore {
+    font-size: 21px;
 }
 
 .img2 {
@@ -87,3 +97,27 @@ body {
     background-attachment: fixed;
     /* opacity: 0.5; */
 }
+.img3 {
+    background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url("image/image-3.jpg");
+    min-height: 600px;
+    background-position: center ;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    /* opacity: 0.5; */
+}
+
+.img1 .caption {
+    background-color: #b784b791;
+}
+
+
+.img2 .caption {
+    background-color: #535c917a;
+}
+
+
+.img3 .caption {
+    background-color: #393e4687;
+}
+
